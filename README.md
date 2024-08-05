@@ -1,4 +1,4 @@
-##Hello 👋
+Hello 👋
 
 Welcome to this little repo with my vscode settings, feel free to use
 this will be poorly documented since it's just for opitional vscode config purposes :P
