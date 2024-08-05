@@ -1,0 +1,81 @@
+{
+  "editor.suggest.localityBonus": true,
+  "codesnap.shutterAction": "copy",
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "editor.tabSize": 2,
+  "editor.indentSize": 2,
+  "editor.mouseWheelZoom": true,
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "symbols",
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontWeight": 500,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.8,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.renderLineHighlight": "gutter",
+  "editor.fontLigatures": true,
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.wordWrapColumn": 100,
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.wordWrap": "bounded",
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset"
+  },
+  "zenMode.centerLayout": false,
+  "apc.header": {
+    "height": 36
+  },
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px;",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Inter",
+  "window.titleSeparator": "",
+  "window.title": " ",
+  "explorer.fileNesting.enabled": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "DM Mono",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwind-fold.autoFold": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Vercel Theme",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "eslint.format.enable": true,
+  "eslint.run": "onSave",
+  "editor.codeActionsOnSave": {
+    "source.sortImports": "always",
+    "source.organizeImports": "always",
+    "source.removeUnusedImports": "always"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
+}
