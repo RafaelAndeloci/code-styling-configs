@@ -1,19 +1,46 @@
 {
-  "editor.suggest.localityBonus": true,
-  "codesnap.shutterAction": "copy",
-  "emmet.includeLanguages": {
-    "postcss": "css"
+  // Terminal Settings:
+  "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    }
   },
+  "git.autofetch": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "DM Mono",
+  "security.allowedUNCHosts": ["wsl$"],
+
+  // Editor Settings
   "editor.tabSize": 2,
   "editor.indentSize": 2,
   "editor.mouseWheelZoom": true,
-  "symbols.hidesExplorerArrows": false,
-  "workbench.iconTheme": "symbols",
-  "editor.fontFamily": "Jetbrains Mono",
-  "editor.fontWeight": 500,
+  "editor.fontFamily": "Geist Mono",
+  "editor.fontWeight": 700,
   "editor.fontSize": 16,
   "editor.lineHeight": 1.8,
-  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggest.localityBonus": true,
+  "codesnap.shutterAction": "copy",
   "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": true,
   "workbench.editor.labelFormat": "short",
@@ -26,6 +53,31 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "editor.wordWrap": "bounded",
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.fileNesting.enabled": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.panel.showLabels": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+
+  //Plugins Settings
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "symbols.hidesExplorerArrows": false,
+
+  //Themes
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Vercel Theme",
+
+  // UI
   "apc.electron": {
     "titleBarStyle": "hiddenInset"
   },
@@ -49,33 +101,29 @@
   "apc.font.family": "Inter",
   "window.titleSeparator": "",
   "window.title": " ",
-  "explorer.fileNesting.enabled": true,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "DM Mono",
-  "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDragAndDrop": false,
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
+
+  //Plugins
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
   "tailwind-fold.autoFold": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Vercel Theme",
+  "aws.samcli.enableCodeLenses": false,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  // Formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnType": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": false, // required
+  "editor.formatOnPaste": true, // optional
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
   "eslint.format.enable": true,
   "eslint.run": "onSave",
   "editor.codeActionsOnSave": {
     "source.sortImports": "always",
     "source.organizeImports": "always",
     "source.removeUnusedImports": "always"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
   }
 }
